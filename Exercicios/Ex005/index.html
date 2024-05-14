@@ -26,7 +26,7 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()">
+    <div id="area" onclick="clicar()" onmouseenter="Entrou()" onmouseleave="Saiu()">
         <p>Interaja...</p>
     </div>
     <script>
@@ -37,7 +37,19 @@
         function clicar()
         {
             Bloco.style.backgroundColor = 'red'
+            Bloco.style.transition = '1s'
             Bloco.innerText = 'comi o cu de quem tá lendo'
+        }
+        function Entrou()
+        {
+            Bloco.style.backgroundColor = 'pink'
+            Bloco.style.transition = '1s'
+            Bloco.innerText = 'Entrou!'
+        }
+        function Saiu()
+        {
+            Bloco.style.backgroundColor = 'blue'
+            Bloco.innerText = 'Saiu!'
         }
     </script>
 </body>
