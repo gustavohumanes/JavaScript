@@ -26,12 +26,15 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseenter="Entrou()" onmouseleave="Saiu()">
+    <div id="area">
         <p>Interaja...</p>
     </div>
     <script>
         //Variables
         var Bloco = window.document.getElementById('area')
+        Bloco.addEventListener('click', clicar)
+        Bloco.addEventListener('mouseenter', Entrou)
+        Bloco.addEventListener('mouseleave', Saiu)
 
         //Functions
         function clicar()
