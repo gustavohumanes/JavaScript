@@ -17,27 +17,15 @@
             padding: 10px;
         }
     </style>
+    <script src="codigo.js"></script>
 </head>
 <body>
     <main id="CalculadoraDeSoma">
     <h1>Aprendendo a somar com butão!</h1>
         <input type="number" name="N1" id="N1">
         <input type="number" name="N2" id="N2">
-        <input type="button" value="soma" onclick="somar()">
+        <input type="button" value="soma" id="somar" onclick="somar()">
         <div id="res"></div>
     </main>
-    <script>
-        function somar()
-        {
-            var valor1 = window.document.getElementById('N1')
-            var valor2 = window.document.getElementById('N2')
-            var res = window.document.getElementById('res')
-
-            var tn1 = Number(valor1.value)
-            var tn2 = Number(valor2.value)
-            var s = tn1 + tn2
-            res.innerHTML = `A soma de ${tn1} e o valor ${tn2} resulta em <strong>${s}</strong>`
-        }
-    </script>
 </body>
 </html>

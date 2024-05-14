@@ -26,18 +26,25 @@
     <p>A maldição não pega nóis não, só mais veloz que um jato fi! </p>
     <script>
         var n1 = Number(window.prompt("Digite um número")); // O window.prompt serve para requisitar um texto, número ou afim, e com o prompt é possível armazenar o valor fornecido pelo usúario dentro de uma váriavel!
+        
         var n2 =  Number(window.prompt("Digite um número")); // n2 guardára o segundo valor fornecido pelo usúario!
+
 /*---------------------------------------------------------------------------*/
+
         var Nome =  window.prompt("Digite seu nome!"); // Nome do aluno
         var Resultado = n1 + n2; // Além do valor Resultado ser da adição de n1 + n2, o "+" tem a função de adição e concatenização
         var Nota = window.prompt("Digite a nota do aluno") // Nota do aluno
         var FraseMotivadora = window.prompt("Digite uma frase motivadora!")
+
 /*---------------------------------------------------------------------------*/
+
         window.alert(`O aluno ${Nome} com idade de ${Resultado} tirou a nota ${Nota}`) // Teste de TemplateString
         window.alert(Nome.length); // Testa quantos caracteres tem alguma letra ou número
         window.alert(Nome.toUpperCase()); // Tudo para maiúsculo
         window.alert(Nome.toLocaleLowerCase()); // Tudo para minusculo
+
 /*---------------------------------------------------------------------------*/
+
         document.write(`<p>${FraseMotivadora}</p>`)
         window.alert(Resultado.toLocaleString(`pt-BR`, {style:`currency`, currency: `BRL`}))
     </script>
