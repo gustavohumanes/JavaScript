@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background: black;
+            color: white;
+            font: normal 18 pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inciando estudos com DOM</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, aut.</p>
+    <p id="Naoseioquebota" name>Cucucuuccucucuucucucuccu</p>
+    <div id="msg">Cu2Cu2Cu2Cu2Cu2</div>
+    <script>
+        //getElementsByTagName
+
+        var Body = window.document.getElementsByTagName('body');
+        var p1 = window.document.getElementsByTagName('p')[0];
+        var p2 = window.document.getElementsByTagName('p')[1];
+        p1.style.background = 'blue'
+        p1.style.border = 'dashed'
+        p1.style.borderRadius = '10px'
+        document.write(p1.innerText)
+        //getElementsByID
+        var Sla = window.document.getElementById('Naoseioquebota')
+        Sla.style.color = 'red'
+        var Cu = window.document.querySelector('div#msg')
+        /*
+        getElementsby
+        Id
+        ClassName
+        Name
+        TagName
+        TagnameNS
+        */
+    </script>
+</body>
+</html>
