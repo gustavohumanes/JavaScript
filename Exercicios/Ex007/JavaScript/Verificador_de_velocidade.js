@@ -7,14 +7,24 @@ function Resultado()
     var TxtVel = window.document.getElementById('Velocimetro')
     var Velocidade = Number(TxtVel.value)
 
-    if(Velocidade > 100)
+    if(Velocidade > 300)
+        {
+            Exibidor.innerText = 'RANDADANDANDANDANDANDANDANDANDANDANDAN VRUUUUUUUUUUUMMMMMM VRUUUUUUUMMMMM'
+        }
+    else if(Velocidade > 180)
+        {
+            Exibidor.innerText = 'DIMINUE AE CARALHO'
+        }
+    else if(Velocidade > 100)
         {
             Exibidor.innerText = 'Multado'
-        }else if( Velocidade < 50)
-            {
-                Exibidor.innerText = 'Multado'
-            } else
-            {
-                Exibidor.innerText = 'Sem multas!'
-            }
+        }
+    else if( Velocidade < 50)
+        {
+            Exibidor.innerText = 'Multado'
+        }
+    else
+        {
+            Exibidor.innerText = 'Sem multas!'
+        }
 }
