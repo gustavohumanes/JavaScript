@@ -1,9 +1,9 @@
-
-const Verificador = document.getElementById('Verify')
+var Verificador = document.getElementById('Verify1')
+Verificador.addEventListener('click', Resultado)
 
 function Resultado()
 {
-    var Exibidor = window.document.getElementById('Exibidor')
+    var Exibidor = window.document.getElementById('Exibidor1')
     var TxtVel = window.document.getElementById('Velocimetro')
     var Velocidade = Number(TxtVel.value)
 
