@@ -37,3 +37,4 @@ function Cumprimentar()
             FalaHorario.innerHTML = `O horário agora é ${Horario}`
         }
 }
+//Código para ser esquecido!

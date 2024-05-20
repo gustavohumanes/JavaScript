@@ -1,4 +1,3 @@
-/* */
 var Informar = window.document.getElementById('Informar')
 Informar.addEventListener('click', Cumprimentar)
 
@@ -36,3 +35,4 @@ function Cumprimentar()
             break
     }
 }
+//Código para ser esquecido!
