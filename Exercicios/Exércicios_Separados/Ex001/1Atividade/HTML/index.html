@@ -3,26 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hora do dia</title>
     <link rel="stylesheet" href="../CSS/style.css">
-    <script src="../JavaScript/Interactor.js" defer></script> 
+
 </head>
-<body>
+<body onload="Carregar()">
     <header>
-        <h1>Dia de hoje!</h1>
+        <h1>Hora do dia!</h1>
     </header>
     <main>
         <section>
-            <div>
-                <p>Testando...</p>
+            <div id="Msg">
+                Aqui é mensagem
             </div>
-            <div>
-                <p>Olá</p>
-            </div>
+            <div id="foto">
+                <img id="Imagem" alt="Imagem do Dia">
+            </div> 
         </section>
     </main>
     <footer>
         <p>&copy; CursoemVideo</p>
     </footer>
+    <script src="../JavaScript/Interactor.js"></script>
 </body>
 </html>
